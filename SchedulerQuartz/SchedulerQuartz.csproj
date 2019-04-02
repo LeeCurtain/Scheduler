@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="2.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.1.0" />
+    <PackageReference Include="Quartz" Version="3.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SchedulerCommon\SchedulerCommon.csproj" />
+    <ProjectReference Include="..\SchedulerModel\SchedulerModel.csproj" />
+    <ProjectReference Include="..\SchedulerSignalR\SchedulerSignalR.csproj" />
+    <ProjectReference Include="..\TasksEntity\TasksEntity.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SchedulerCommon\SchedulerCommon.csproj" />
+    <ProjectReference Include="..\SchedulerQuartz\SchedulerQuartz.csproj" />
+    <ProjectReference Include="..\TasksCommon\TasksCommon.csproj" />
+    <ProjectReference Include="..\TasksDAL\TasksDAL.csproj" />
+    <ProjectReference Include="..\TasksEntity\TasksEntity.csproj" />
+  </ItemGroup>
+
+</Project>
